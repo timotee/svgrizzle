@@ -1,0 +1,30 @@
+// @font-face {
+//   font-family: 'WebFont';
+//   src:  url('./path/to/WebFont.woff');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// body {
+//     background: url('./url-to-image.png');
+//     font-family: 'OpenSans', sans-serif;
+// }
+
+
+$grid-size: 8px;
+$grid-size-x: $grid-size;
+$grid-size-y: $grid-size;
+$grid-color: #d2d2d2;
+
+body {
+  background-image:
+          linear-gradient(to right, $grid-color 0 1px, transparent 1px),
+          linear-gradient(to bottom, $grid-color 0 1px, transparent 1px);
+  background-size: $grid-size-x $grid-size-y;
+  background-position: -1px -1px;
+}
+
+
+body {
+  height: 100vh;
+}
